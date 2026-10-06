@@ -1,0 +1,10 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #172033; background: #f5f7fb; line-height: 1.5; }
+* { box-sizing: border-box; } body { margin: 0; } button { font: inherit; cursor: pointer; }
+.app { max-width: 940px; margin: 0 auto; padding: 48px 20px; } h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3.2rem); } h2 { margin-top: 0; } .intro { color: #56647a; margin: 0 0 32px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; } .demo { padding: 22px; background: white; border: 1px solid #d9e0ea; border-radius: 14px; box-shadow: 0 5px 18px #25365b0d; } .demo h2 { font-size: 1.15rem; }
+.primary, .tab { border: 0; border-radius: 8px; padding: 10px 14px; color: white; background: #2457c5; } .secondary { border: 1px solid #b9c6d8; border-radius: 8px; padding: 9px 13px; background: white; color: #263650; }
+.overlay { position: fixed; inset: 0; display: grid; place-items: center; padding: 20px; background: #10182899; } .dialog { width: min(100%, 430px); padding: 24px; background: white; border-radius: 14px; box-shadow: 0 20px 60px #1018284d; } .dialog-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; }
+.tabs-list { display: flex; gap: 4px; border-bottom: 1px solid #d9e0ea; } .tab { border-radius: 8px 8px 0 0; background: transparent; color: #53627a; } .tab[aria-selected="true"] { color: white; background: #2457c5; } .panel { padding: 14px 2px; }
+.disclosure { display: flex; justify-content: space-between; width: 100%; padding: 12px 0; border: 0; border-bottom: 1px solid #d9e0ea; background: transparent; font-weight: 700; text-align: left; }.disclosure-content { padding: 12px 0; color: #56647a; }
+:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } .app { padding-top: 30px; } }
